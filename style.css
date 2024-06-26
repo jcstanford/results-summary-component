@@ -8,83 +8,127 @@
     display: flex;
 }
 
-/* @font-face {
-    font-family: Hanken Grotesk;
-    src: url(HankenGrotesk-VariableFont_wght.ttf);
-}
-
 body {
     font-family: Hanken Grotesk;
-} */
+}
 
 /*****************************
   Mobile Layout
 *****************************/
 
-/* .container {
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  /* .box {
     display: flex;
-}
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 30px grey;
+  } */
 
-.results {
+ .result {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     width: 250px;
     text-align: center;
     padding: 20px;
     color: hsl(0, 0%, 100%);
-    border-radius: 30px;
-}
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 
-.results h3 {
+  .result h1 {
     color: hsla(0, 0%, 100%, 70%);
-}
-
-#result-score {
+  }
+  
+  .score {
     border-radius: 50%;
-    height: 120px;
-    width: 120px;
+    height: 175px;
+    width: 175px;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    display: inline-block;
-}
+  }
+  
+  .score h2 {
+    font-weight: bold;
+    font-size: 3.6em;
+    margin-bottom: 0;
+    margin-top: .8em;
+  }
+  
+  .score span {
+    color: hsla(0, 0%, 100%, 70%);
+  }
+  
+  .score-detail h3 {
+    font-size: 1.5em;
+  }
+  
+  .score-detail p {
+    color: hsla(0, 0%, 100%, 80%);
+    padding: 0 1.8em;
+  }
 
-#description {
-    font-size: 18px;
+  .summary {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 13px;
+/*     border-right: 1px solid grey;
+    border-bottom: 1px solid grey; */
+  }
+  
+/*  #description {
+  font-size: 18px;
     font-weight: 200;
-}
+  } */
 
-.summary {
-    margin-left: 25px; 
-}
+  .summary-detail {
+    padding: 5px 0;
+    margin-bottom: 20px;
+  }
+  
+  .reaction, .memory, .verbal, .visual {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+  
+  .reaction {
+    background-color: hsla(0, 100%, 67%, 5%);
+  }
+  
+  .reaction > #reaction-name {
+    color: hsl(0, 100%, 67%);
+    font-weight: bold;
+  }
 
-#reaction, #memory, #verbal, #visual {
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 10px;
-    text-align: justify;
-}
-
-#reaction {
-    background-color: hsla(0, 100%, 67%, 5%); 
-    
-}
-
-#memory {
+  .memory {
     background-color: hsla(39, 100%, 56%, 5%);
-}
+  }
+  
+  .memory > #memory-name {
+    color: hsl(39, 100%, 56%);
+    font-weight: bold;
+  }
 
-#verbal {
+  .verbal {
     background-color: hsla(166, 100%, 37%, 5%);
-}
+  }
+  
+  .verbal > #verbal-name {
+    color: hsl(166, 100%, 37%);
+    font-weight: bold;
+  }
 
-#visual {
+  .visual {
     background-color:hsla(234, 85%, 45%, 5%);
-}
+  }
+  
+  .visual > #visual-name {
+    color: hsl(234, 85%, 45%);
+    font-weight: bold;
+  }
 
-img {
-    width:15px;
-    height:15px;
-}
-
-button {
+  button {
     background-color: hsl(224, 30%, 27%);
     border: none;
     color: white;
@@ -94,7 +138,13 @@ button {
     margin-top: 10px;
     cursor: pointer;
     border-radius: 30px;
-} */
+  }
+  
+  button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
+  
+}
 
 /*****************************
     Laptop/Tablet Layout
@@ -233,7 +283,7 @@ button {
 /*****************************
     Desktop Layout
 *****************************/
-@media screen and (min-width: 1865px) {
+@media screen and (min-width: 1785px) {
   .box {
     margin: 60px 650px;
     display: flex;
