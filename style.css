@@ -87,10 +87,6 @@ body {
     padding: 0 3em;
     font-size: 2em;
   }
-
-  /********
-    font sizes, padding, and button
-  *********/
   
   .summary {
     /* border-top-right-radius: 2em;
@@ -151,24 +147,28 @@ body {
   button {
     background-color: hsl(224, 30%, 27%);
     border: none;
-    color: white;
+    color: hsla(0, 0%, 100%, 90%);
     padding: 15px 100px;
     text-align: center;
     text-decoration: none;
     margin: 0;
     cursor: pointer;
     border-radius: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 6em;
   }
   
 }
 
 /*****************************
   Tablet/Ipad Layout
+  (use percentages instead of static px/ems)
 *****************************/
 
 @media screen and (min-width: 501px) and (max-width: 700px) {
 .box {
-    margin: 6em 2em;
+    margin: 6em 5%;
     display: flex;
 /*  border: 1px solid black; */
     border-radius: 2em;
@@ -178,7 +178,7 @@ body {
 
  .result {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    width: 19rem;
+    width: 50%;
     text-align: center;
     padding: 1em 2em;
     color: hsl(0, 0%, 100%);
@@ -233,6 +233,7 @@ body {
     border-top-right-radius: 2em;
     border-bottom-right-radius: 2em;
     padding: 13px;
+    width: 50%;
   }
   
   .summary h2 {
@@ -296,8 +297,7 @@ body {
     padding: 15px 70px;
     text-align: center;
     text-decoration: none;
-    /* margin-top: 10px; */
-    margin-left: 3em;
+    margin-top: 10px;
     cursor: pointer;
     border-radius: 30px;
   }
