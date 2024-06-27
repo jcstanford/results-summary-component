@@ -3,13 +3,17 @@ html {
 }
 
 .attribution {
-    font-size: 11px; text-align: center;
-    display: flex;
+   ont-size: 11px; text-align: center;
+  display: flex;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
-    display: flex;
+  color: hsl(228, 45%, 44%);
+  display: flex;
+}
+
+button:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 body {
@@ -53,7 +57,6 @@ body {
     background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     display: flex;
     justify-content: center;
-    
     position: relative;
     margin-left: 31%;
   }
@@ -85,31 +88,28 @@ body {
     font-size: 2em;
   }
 
-  .summary {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding: 13px;
-/*     border-right: 1px solid grey;
-    border-bottom: 1px solid grey; */
-    
-  }
+  /********
+    font sizes, padding, and button
+  *********/
   
-/*  #description {
-  font-size: 18px;
-    font-weight: 200;
-  } */
+  .summary {
+    /* border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em; */
+    padding: 1.5em 3em;
+  }
 
   .summary-detail {
-    padding: 5px 0;
-    margin-bottom: 20px;
+    padding: 0.5em 0;
+    /* margin-bottom: 20px; */
   }
   
   .reaction, .memory, .verbal, .visual {
     display: flex;
     justify-content: space-between;
-    padding: 15px 15px;
-    margin: 10px 0;
+    padding: 1em;
+    margin: 0 0 1.5em 0;
     border-radius: 10px;
+    font-size: 1.5em
   }
   
   .reaction {
@@ -155,23 +155,161 @@ body {
     padding: 15px 100px;
     text-align: center;
     text-decoration: none;
-    margin-top: 10px;
+    margin: 0;
     cursor: pointer;
     border-radius: 30px;
-  }
-  
-  button:hover {
-    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   }
   
 }
 
 /*****************************
-    Laptop/Tablet Layout
+  Tablet/Ipad Layout
 *****************************/
-@media screen and (min-width: 800px) and (max-width: 1864px) {
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+.box {
+    margin: 6em 2em;
+    display: flex;
+/*  border: 1px solid black; */
+    border-radius: 2em;
+    overflow: hidden;
+    box-shadow: 10px 10px 30px grey;
+  }
+
+ .result {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 19rem;
+    text-align: center;
+    padding: 1em 2em;
+    color: hsl(0, 0%, 100%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .result h1 {
+    color: hsla(0, 0%, 100%, 70%);
+    font-size: 1.5em;
+    padding-bottom: .3em;
+  }
+  
+  .score {
+    border-radius: 50%;
+    height: 13.5em;
+    width: 13.5em;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: 15%;
+  }
+  
+  .score div {
+    position: absolute;
+  }
+
+  .score h2 {
+    font-weight: bold;
+    font-size: 4.8em;
+    margin-bottom: 0;
+    margin-top: 0.6em;
+  }
+  
+  .score span {
+    color: hsla(0, 0%, 100%, 50%);
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .score-detail h3 {
+    font-size: 2.1em;
+  }
+  
+  .score-detail p {
+    color: hsla(0, 0%, 100%, 80%);
+    padding: 0 2.2em;
+  }
+
+  .summary {
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    padding: 13px;
+  }
+  
+  .summary h2 {
+    padding-left: .5em;
+  }
+
+  .summary-detail {
+    padding: 3px 0;
+/*     margin-bottom: 20px; */
+  }
+  
+  .reaction, .memory, .verbal, .visual {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 1.2em;
+  }
+  
+  .reaction {
+    background-color: hsla(0, 100%, 67%, 5%);
+  }
+  
+  .reaction > #reaction-name {
+    color: hsl(0, 100%, 67%);
+    font-weight: bold;
+  }
+
+  .memory {
+    background-color: hsla(39, 100%, 56%, 5%);
+  }
+  
+  .memory > #memory-name {
+    color: hsl(39, 100%, 56%);
+    font-weight: bold;
+  }
+
+  .verbal {
+    background-color: hsla(166, 100%, 37%, 5%);
+  }
+  
+  .verbal > #verbal-name {
+    color: hsl(166, 100%, 37%);
+    font-weight: bold;
+  }
+
+  .visual {
+    background-color:hsla(234, 85%, 45%, 5%);
+  }
+  
+  .visual > #visual-name {
+    color: hsl(234, 85%, 45%);
+    font-weight: bold;
+  }
+
+  button {
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    color: white;
+    padding: 15px 70px;
+    text-align: center;
+    text-decoration: none;
+    /* margin-top: 10px; */
+    margin-left: 3em;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+
+}
+
+/*****************************
+    Laptop Layout
+*****************************/
+@media screen and (min-width: 1350px) and (max-width: 1864px) {
   .box {
-    margin: 60px 600px;
+    margin: 60px 500px;
     display: flex;
 /*  border: 1px solid black; */
     border-radius: 20px;
@@ -224,14 +362,7 @@ body {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 13px;
-/*     border-right: 1px solid grey;
-    border-bottom: 1px solid grey; */
   }
-  
-/*  #description {
-  font-size: 18px;
-    font-weight: 200;
-  } */
 
   .summary-detail {
     padding: 5px 0;
@@ -292,10 +423,6 @@ body {
     margin-top: 10px;
     cursor: pointer;
     border-radius: 30px;
-  }
-  
-  button:hover {
-    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   }
   
 }
@@ -427,8 +554,5 @@ body {
     cursor: pointer;
     border-radius: 30px;
   }
-  
-  button:hover {
-    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  }
+
 }
