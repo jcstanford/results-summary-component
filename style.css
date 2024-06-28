@@ -23,6 +23,15 @@ body {
   margin: 0;
 }
 
+.summary-detail div {
+  display: flex;
+  text-align: center;
+}
+
+.summary-detail div img {
+  padding-right: 0.5em;
+}
+
 
 /*****************************
   Mobile Layout
@@ -117,7 +126,7 @@ body {
     background-color: hsla(0, 100%, 67%, 5%);
   }
   
-  .reaction > #reaction-name {
+  .reaction #reaction-name {
     color: hsl(0, 100%, 67%);
     font-weight: bold;
   }
@@ -126,7 +135,7 @@ body {
     background-color: hsla(39, 100%, 56%, 5%);
   }
   
-  .memory > #memory-name {
+  .memory #memory-name {
     color: hsl(39, 100%, 56%);
     font-weight: bold;
   }
@@ -135,7 +144,7 @@ body {
     background-color: hsla(166, 100%, 37%, 5%);
   }
   
-  .verbal > #verbal-name {
+  .verbal #verbal-name {
     color: hsl(166, 100%, 37%);
     font-weight: bold;
   }
@@ -144,7 +153,7 @@ body {
     background-color:hsla(234, 85%, 45%, 5%);
   }
   
-  .visual > #visual-name {
+  .visual #visual-name {
     color: hsl(234, 85%, 45%);
     font-weight: bold;
   }
@@ -177,7 +186,7 @@ body {
 
 @media screen and (min-width: 501px) and (max-width: 800px) {
 .box {
-    margin: 15%;
+    margin: 15% 10%;
     display: flex;
 /*  border: 1px solid black; */
     border-radius: 2em;
@@ -269,7 +278,7 @@ body {
     background-color: hsla(0, 100%, 67%, 5%);
   }
   
-  .reaction > #reaction-name {
+  .reaction #reaction-name {
     color: hsl(0, 100%, 67%);
     font-weight: bold;
   }
@@ -278,7 +287,7 @@ body {
     background-color: hsla(39, 100%, 56%, 5%);
   }
   
-  .memory > #memory-name {
+  .memory #memory-name {
     color: hsl(39, 100%, 56%);
     font-weight: bold;
   }
@@ -287,7 +296,7 @@ body {
     background-color: hsla(166, 100%, 37%, 5%);
   }
   
-  .verbal > #verbal-name {
+  .verbal #verbal-name {
     color: hsl(166, 100%, 37%);
     font-weight: bold;
   }
@@ -296,7 +305,7 @@ body {
     background-color:hsla(234, 85%, 45%, 5%);
   }
   
-  .visual > #visual-name {
+  .visual #visual-name {
     color: hsl(234, 85%, 45%);
     font-weight: bold;
   }
@@ -419,7 +428,7 @@ body {
     background-color: hsla(0, 100%, 67%, 5%);
   }
   
-  .reaction > #reaction-name {
+  .reaction #reaction-name {
     color: hsl(0, 100%, 67%);
     font-weight: bold;
   }
@@ -428,7 +437,7 @@ body {
     background-color: hsla(39, 100%, 56%, 5%);
   }
   
-  .memory > #memory-name {
+  .memory #memory-name {
     color: hsl(39, 100%, 56%);
     font-weight: bold;
   }
@@ -437,7 +446,7 @@ body {
     background-color: hsla(166, 100%, 37%, 5%);
   }
   
-  .verbal > #verbal-name {
+  .verbal #verbal-name {
     color: hsl(166, 100%, 37%);
     font-weight: bold;
   }
@@ -446,7 +455,7 @@ body {
     background-color:hsla(234, 85%, 45%, 5%);
   }
   
-  .visual > #visual-name {
+  .visual #visual-name {
     color: hsl(234, 85%, 45%);
     font-weight: bold;
   }
@@ -554,10 +563,6 @@ body {
   .summary-detail {
     padding: 3px 0;
 /*     margin-bottom: 20px; */
-  }
-
-  .summary-detail div {
-    border: 1px solid black;
   }
   
   .reaction, .memory, .verbal, .visual {
